@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19206" systemVersion="20G165" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Buku" representedClassName="Buku" syncable="YES" codeGenerationType="class">
+    <entity name="Buku" representedClassName=".Buku" syncable="YES" codeGenerationType="class">
+        <attribute name="gambar" optional="YES" attributeType="String"/>
         <attribute name="id_buku" optional="YES" attributeType="String"/>
         <attribute name="judul" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
-        <attribute name="id_user" optional="YES" attributeType="String"/>
-        <attribute name="nama_user" optional="YES" attributeType="String"/>
+    <entity name="Userr" representedClassName=".User" syncable="YES" codeGenerationType="class">
+        <attribute name="id_userr" optional="YES" attributeType="String"/>
+        <attribute name="nama_userr" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Buku" positionX="-63" positionY="-18" width="128" height="59"/>
-        <element name="User" positionX="-54" positionY="9" width="128" height="59"/>
+        <element name="Buku" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="Userr" positionX="-54" positionY="9" width="128" height="59"/>
     </elements>
 </model>

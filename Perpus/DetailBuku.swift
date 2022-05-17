@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct DetailBuku: View {
+    @Environment(\.managedObjectContext) var context
+    @ObservedObject var dataBuku: Buku
+    @State private var buku: [Buku] = [Buku]()
+    @FetchRequest(entity: Buku.entity(), sortDescriptors: []) var buku2: FetchedResults<Buku>
     var body: some View {
         ScrollView{
             VStack(alignment: .leading) {
@@ -30,6 +34,6 @@ struct DetailBuku: View {
 
 struct DetailBuku_Previews: PreviewProvider {
     static var previews: some View {
-        DetailBuku()
+        DetailBuku(dataBuku: Buku())
     }
 }

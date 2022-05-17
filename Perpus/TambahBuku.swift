@@ -11,6 +11,7 @@ struct TambahBuku: View {
     @Environment(\.managedObjectContext) var context
     @State var idText = ""
     @State var judulText = ""
+    @State var gambarText = ""
     var body: some View {
         NavigationView{
             ScrollView{
@@ -30,6 +31,12 @@ struct TambahBuku: View {
                         .foregroundColor(Color.black)
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth:2))
                         .cornerRadius(10)
+                    TextField("Link gambar", text: self.$gambarText)
+                        .padding(14)
+                        .background(Color.white)
+                        .foregroundColor(Color.black)
+                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth:2))
+                        .cornerRadius(10)
                     Button("Selesai") {
                         self.tambahBuku()
                         print("Button tapped!")
@@ -43,7 +50,7 @@ struct TambahBuku: View {
                         Text("List Buku")
                     }
                     .padding(12)
-                    .background(Color.red)
+                    .background(Color.black)
                     .cornerRadius(8)
                 }
                 .padding(.horizontal, 20)
@@ -56,6 +63,7 @@ struct TambahBuku: View {
     func tambahBuku() {
         let newBuku = Buku(context: self.context)
         newBuku.judul = judulText
+        newBuku.gambar = gambarText
         do {
             try self.context.save()
         } catch let error {

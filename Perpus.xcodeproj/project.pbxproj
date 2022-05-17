@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A4B8E1C282A1816007D3AB4 /* AsyncGambar in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B8E1B282A1816007D3AB4 /* AsyncGambar */; };
+		2A4B8E1E282A22C0007D3AB4 /* TambahGambar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B8E1D282A22C0007D3AB4 /* TambahGambar.swift */; };
+		2A4B8E20282A25E4007D3AB4 /* UIImageCompressor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B8E1F282A25E4007D3AB4 /* UIImageCompressor.swift */; };
+		2A4B8E22282A26D5007D3AB4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B8E21282A26D5007D3AB4 /* ImagePicker.swift */; };
 		2A55DE0A282757700027BA87 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A55DE09282757700027BA87 /* TabBar.swift */; };
 		2A86B84E2826E45D00143E62 /* PerpusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A86B84D2826E45D00143E62 /* PerpusApp.swift */; };
 		2A86B8502826E45D00143E62 /* TambahBuku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A86B84F2826E45D00143E62 /* TambahBuku.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4B8E1B282A1816007D3AB4 /* AsyncGambar */ = {isa = PBXFileReference; lastKnownFileType = text; path = AsyncGambar; sourceTree = "<group>"; };
+		2A4B8E1D282A22C0007D3AB4 /* TambahGambar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TambahGambar.swift; sourceTree = "<group>"; };
+		2A4B8E1F282A25E4007D3AB4 /* UIImageCompressor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageCompressor.swift; sourceTree = "<group>"; };
+		2A4B8E21282A26D5007D3AB4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		2A55DE09282757700027BA87 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		2A86B84A2826E45D00143E62 /* Perpus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perpus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A86B84D2826E45D00143E62 /* PerpusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerpusApp.swift; sourceTree = "<group>"; };
@@ -70,6 +78,10 @@
 				2A86B85D2826EEBE00143E62 /* DetailBuku.swift */,
 				2A86B85F2826F03E00143E62 /* UbahBuku.swift */,
 				2A89A97D2826F6B10047E2E5 /* CDManager.swift */,
+				2A4B8E1D282A22C0007D3AB4 /* TambahGambar.swift */,
+				2A4B8E1F282A25E4007D3AB4 /* UIImageCompressor.swift */,
+				2A4B8E21282A26D5007D3AB4 /* ImagePicker.swift */,
+				2A4B8E1B282A1816007D3AB4 /* AsyncGambar */,
 				2A86B8512826E45E00143E62 /* Assets.xcassets */,
 				2A9F3A762826F38A00E40302 /* Perpus.xcdatamodeld */,
 				2A86B8532826E45E00143E62 /* Preview Content */,
@@ -159,8 +171,12 @@
 				2A86B8602826F03E00143E62 /* UbahBuku.swift in Sources */,
 				2A86B85C2826ED8000143E62 /* ListBuku.swift in Sources */,
 				2A55DE0A282757700027BA87 /* TabBar.swift in Sources */,
+				2A4B8E20282A25E4007D3AB4 /* UIImageCompressor.swift in Sources */,
 				2A89A97E2826F6B10047E2E5 /* CDManager.swift in Sources */,
 				2A86B85E2826EEBE00143E62 /* DetailBuku.swift in Sources */,
+				2A4B8E1E282A22C0007D3AB4 /* TambahGambar.swift in Sources */,
+				2A4B8E1C282A1816007D3AB4 /* AsyncGambar in Sources */,
+				2A4B8E22282A26D5007D3AB4 /* ImagePicker.swift in Sources */,
 				2A86B8502826E45D00143E62 /* TambahBuku.swift in Sources */,
 				2A86B84E2826E45D00143E62 /* PerpusApp.swift in Sources */,
 			);

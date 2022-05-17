@@ -19,32 +19,46 @@ struct ListBuku: View {
                     Text("Tambah Buku")
                 }
                 .padding(12)
-                .background(Color.red)
+                .background(Color.black)
                 .cornerRadius(8)
                 VStack{
                     List{
-                        ForEach(listBuku, id: \.self) {baris in
-                            NavigationLink (destination: DetailBuku()) {
+                        ForEach(listBuku, id: \.self) {bariss in
+                            NavigationLink (destination: DetailBuku(dataBuku: bariss)) {
                                 VStack{
-                                    Text("\(baris.judul ?? "Data nil")")
+                                    Image("\(bariss.gambar ?? "Data nil")")
+                                    Text("\(bariss.judul ?? "Data nil")")
                                         .foregroundColor(.green)
                                 }
+                                .foregroundColor(.green)
                                 
                             }
+                            .foregroundColor(.green)
                             .padding(12)
                         }
+                        .foregroundColor(.green)
                     }
+                    .foregroundColor(.green)
                     .listStyle(.plain)
                     
                 }
+                .foregroundColor(.green)
+                .frame(maxHeight: .infinity)
+                .padding(.bottom, 10)
+                .padding(.horizontal, 20)
+                .onAppear(perform: {
+                    listBuku = coreDM.getAllBuku()
+                })
                 
             }
+            .foregroundColor(.green)
             .padding(.horizontal, 20)
         }
+        .foregroundColor(.green)
         .frame(maxHeight: .infinity)
-        .onAppear(perform: {
-            listBuku = coreDM.getAllBuku()
-        })
+//        .onAppear(perform: {
+//            listBuku = coreDM.getAllBuku()
+//        })
     }
 }
 

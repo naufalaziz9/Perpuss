@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PerpusApp: App {
+    let persistenceContainer = CDManager.shared
     var body: some Scene {
         WindowGroup {
-            TabBar()
+            TambahGambar(title: "Product Image", image: .constant(nil))
+//            TabBar()
+//                .environment(\.managedObjectContext,persistenceContainer.persistentContainer.viewContext)
         }
     }
 }

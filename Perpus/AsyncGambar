@@ -1,0 +1,36 @@
+////
+////  AsyncGambar.swift
+////  Perpus
+////
+////  Created by naufalazizz on 10/05/22.
+////
+//
+//import SwiftUI
+//
+//struct AsyncGambar: View {
+//    @State var gambarText = ""
+//    var body: some View {
+//        VStack(spacing: 10){
+//            TextField("Link gambar", text: $gambarText)
+//                .padding(14)
+//                .background(Color.white)
+//                .foregroundColor(Color.black)
+//                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.black, lineWidth:2))
+//                .cornerRadius(10)
+//                .padding(.bottom, 100)
+//            if #available(iOS 15.0, *) {
+//                AsyncImage(url: URL(string: gambarText))
+//                    .scaledToFit()
+//            } else {
+//                // Fallback on earlier versions
+//            }
+//        }
+//        .padding(.horizontal, 20)
+//    }
+//}
+//
+//struct AsyncGambar_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AsyncGambar()
+//    }
+//}
